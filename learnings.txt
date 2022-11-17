@@ -1,0 +1,14 @@
+There's so little documentation on how to properly build and use Apache thrift.
+
+A couple of difficulties I faced while building the basic thrift tutorial project,
+
+https://github.com/cdmeister/Basic-Thrift-Tutorial
+
+1. Thrift installation didn't work for kotelin but that is fine. (I only needed it for cpp)
+
+2. I don't know what boost is, maybe it wasn't installed in my system. I had to replace 
+   boost::shared_ptr with std::shared_ptr
+
+3. To run the compiled server and client exec, I had to export an env variable
+
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
